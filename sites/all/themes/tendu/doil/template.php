@@ -26,3 +26,11 @@ function doil_preprocess_node(&$vars) {
     }
   }
 }
+
+/**
+ * Filter tags from user signature.
+ */
+function doil_preprocess_comment(&$variables) {
+  $comment = $variables['comment'];
+  $variables['signature'] = strip_tags($comment->signature, '<p><a><br>');
+}
