@@ -157,8 +157,8 @@ div.messages{padding:12px;margin-bottom:10px;}
 /* Top translators block */
 #block-block-25{background-color:#F6F6F2;border:1px solid #CFCFCF;padding:8px 12px 10px 0;}
 #block-block-25 h2{padding:0 12px;}
-#block-block-25 .content .object-frame, #block-block-25 object{overflow:hidden;}
-#block-block-25 object{height:275px;margin-top:-65px;}
+#block-block-25 .content .object-frame {overflow:hidden;}
+#block-block-25 iframe {height:275px;margin-top:-65px;}
 
 /* Style blocks with Block Class (or Block Theme):*/
 .block-green-light {padding:12px 0 0 0 !important;border:1px solid #bfd3bd;background:#ecfbeb url(images/bg_green_light_top.gif) repeat-x 0 0 !important; overflow:hidden}
