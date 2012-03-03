@@ -5,7 +5,7 @@
  */
 
 // This should have been in doil_preprocess_page, didn't work there :s
-$mobile_select = 'jQuery("#main-nav ul").mobileSelect({ deviceWidth: 1800 })';
+$mobile_select = 'jQuery("#main-nav ul").mobileSelect({ deviceWidth: 800 })';
 drupal_add_js($mobile_select, 'inline', 'footer');
 
 /**
