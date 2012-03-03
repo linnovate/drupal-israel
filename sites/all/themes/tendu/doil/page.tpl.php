@@ -13,6 +13,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="<?php print $language->language; ?>" xml:lang="<?php print $language->language; ?>">
   <head>
     <title><?php print $head_title; ?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php print $head; ?>
     <?php print $styles; ?>
     <?php print $scripts; ?>
@@ -118,26 +119,6 @@
       <?php endif; ?>
       
       <div id="main" <?php if (empty($content_after)) print 'class="footer-spacer"';?>>
-        <?php if ($left): ?>
-        <div id="sidebar-first" class="region sidebar-region">
-          <?php print $left; ?>
-        </div>
-         <!-- /sidebar-first -->
-        <?php endif; ?>       
-
-        <?php if ($right && $user_blocks): ?>
-        <div id="sidebar-second" class="sidebar-region">
-          
-          <?php if(!empty($user_blocks)): ?>
-            <div id="user-blocks">
-                <?php print $user_blocks; ?>
-            </div>
-          <?php endif; ?>
-            
-          <?php if (!empty($right)) print $right; ?>
-        </div>
-        <!-- /sidebar-second -->
-        <?php endif; ?>        
 
         <div id="content">
           <?php if ($accesibility_links):?>
@@ -193,6 +174,26 @@
         
         </div>
         <!-- /content -->
+
+        <?php if ($left): ?>
+        <div id="sidebar-first" class="region sidebar-region">
+          <?php print $left; ?>
+        </div>
+         <!-- /sidebar-first -->
+        <?php endif; ?>       
+
+        <?php if ($right && $user_blocks): ?>
+        <div id="sidebar-second" class="sidebar-region">
+          <?php if(!empty($user_blocks)): ?>
+            <div id="user-blocks">
+                <?php print $user_blocks; ?>
+            </div>
+          <?php endif; ?>
+          <?php if (!empty($right)) print $right; ?>
+        </div>
+        <!-- /sidebar-second -->
+        <?php endif; ?>        
+
       </div>
       <!-- /main -->
      

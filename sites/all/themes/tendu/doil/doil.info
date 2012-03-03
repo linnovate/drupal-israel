@@ -8,8 +8,11 @@ engine = phptemplate
 base theme = tendu
 
 stylesheets[all][] = style_subtheme.css
+stylesheets[all][] = responsive_subtheme.css
 conditional-stylesheets[if IE][all][] = ie_subtheme.css
 conditional-stylesheets[if lt IE 7][all][] = ie6_subtheme.css
+
+scripts[] = jquery.mobileselect.js
 
 regions[header] = Header
 regions[left] = First sidebar
