@@ -8,7 +8,7 @@
  */
 
 
-/* Reset tendu's layout to create a responsive design, sorry tom */
+/* Reset tendu's layout to create a responsive design, sorry Tom */
 #page {min-width: 0; width: auto;}
 #content,
 .with-sidebar-first #content,
@@ -51,9 +51,29 @@
 #footer {
   clear: both;
 }
+#header-content {
+  padding: 12px;
+}
+#header-blocks,
+#site-details {
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: 12px;
+}
+#header-blocks #search-box .form-text {
+  max-width: 70%;
+}
+#main-nav select {
+  margin-top: 15px;
+  width: 100%;
+  padding: 5px;
+}
 
 /* Some Responsive Styling */
 @media (max-width: 800px) {
+  #admin-menu {
+    display: none;
+  }
   #page {
     font-size: 1em;
     line-height: 1.44em;
@@ -77,9 +97,10 @@
   #mission {
     margin-left: 0;
   }
-  #main-nav select {
-    margin-top: 15px;
-    width: 100%;
-    padding: 5px;
+}
+
+@media (max-width: 640px) {
+  #admin-menu {
+    display: none;
   }
 }
